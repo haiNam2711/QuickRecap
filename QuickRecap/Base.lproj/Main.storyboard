@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuickRecap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIl-NQ-B5V">
+                                <rect key="frame" x="110" y="169" width="173" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Record"/>
+                                <connections>
+                                    <action selector="recordTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="18C-zJ-TzK"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="INA-8d-Iv2">
+                                <rect key="frame" x="54" y="354" width="285" height="314"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFo-ug-11d">
+                                <rect key="frame" x="110" y="234" width="173" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Summarize"/>
+                                <connections>
+                                    <action selector="testEncoder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qH1-a1-mmR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nIl-NQ-B5V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="M5u-aC-jh2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="INA-8d-Iv2" secondAttribute="trailing" constant="54" id="MX3-7a-Kdf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="INA-8d-Iv2" secondAttribute="bottom" constant="150" id="SiC-nx-UFC"/>
+                            <constraint firstItem="INA-8d-Iv2" firstAttribute="top" secondItem="qFo-ug-11d" secondAttribute="bottom" constant="85" id="W94-Lg-S6K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nIl-NQ-B5V" secondAttribute="trailing" constant="110" id="kQg-c0-HAj"/>
+                            <constraint firstItem="qFo-ug-11d" firstAttribute="top" secondItem="nIl-NQ-B5V" secondAttribute="bottom" constant="30" id="lF1-8S-VKL"/>
+                            <constraint firstItem="qFo-ug-11d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="og3-94-LHn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qFo-ug-11d" secondAttribute="trailing" constant="110" id="si7-lM-HTl"/>
+                            <constraint firstItem="INA-8d-Iv2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="zae-mF-AO0"/>
+                            <constraint firstItem="nIl-NQ-B5V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="zmA-TZ-mzz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logTextView" destination="INA-8d-Iv2" id="aVJ-oJ-8mf"/>
+                        <outlet property="recordButton" destination="nIl-NQ-B5V" id="BHB-Yn-XHo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

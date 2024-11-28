@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Jinja",
+        "repositoryURL": "https://github.com/maiqingqiang/Jinja",
+        "state": {
+          "branch": null,
+          "revision": "6dbe4c449469fb586d0f7339f900f0dd4d78b167",
+          "version": "1.0.6"
+        }
+      },
+      {
+        "package": "ProgressHUD",
+        "repositoryURL": "https://github.com/relatedcode/ProgressHUD",
+        "state": {
+          "branch": null,
+          "revision": "9364904a42cb25f58d026451140c4080a868e72e",
+          "version": "14.1.3"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift",
+        "state": {
+          "branch": null,
+          "revision": "c7c7d2cf50a3211fe2843f76869c698e4e417930",
+          "version": "6.8.0"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser.git",
+        "state": {
+          "branch": null,
+          "revision": "41982a3656a71c768319979febd796c6fd111d5c",
+          "version": "1.5.0"
+        }
+      },
+      {
+        "package": "swift-transformers",
+        "repositoryURL": "https://github.com/huggingface/swift-transformers.git",
+        "state": {
+          "branch": null,
+          "revision": "d42fdae473c49ea216671da8caae58e102d28709",
+          "version": "0.1.14"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
